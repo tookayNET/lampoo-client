@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Contax Sans';
+    src: local('Contax Sans 55 Regular'), local('Contax-Sans-55-Regular'),
+        url('ContaxSans55-Regular.woff2') format('woff2'),
+        url('ContaxSans55-Regular.woff') format('woff'),
+        url('ContaxSans55-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

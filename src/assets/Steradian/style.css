@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Steradian';
+    src: local('Steradian Regular'), local('Steradian-Regular'),
+        url('Steradian-Rg.woff2') format('woff2'),
+        url('Steradian-Rg.woff') format('woff'),
+        url('Steradian-Rg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
