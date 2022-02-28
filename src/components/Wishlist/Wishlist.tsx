@@ -13,16 +13,16 @@ const Wishlist = () => {
         setData(actualData);
       })
   }, []);
-  
+
 
   return (
     <>
       <div className="wishlist">
-          <h3>Wishlist</h3>
+        <h3>Wishlist</h3>
       </div>
       <div className="items">
-        {data && data.map((item: any) => (
-          <div className="item-card" key={item.designer}>
+        {data && data.map((item: any, i: any) => (
+          <div className="item-card" key={i}>
             <Item item={item}/>
           </div>
         ))}

@@ -1,22 +1,18 @@
 import '../styles/stylesheet.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faX } from '@fortawesome/free-solid-svg-icons'
 import SizeDropdown from './SizeDropdown/SizeDropdown';
 
-// const element = <FontAwesomeIcon icon={faCoffee} />
-
 const Item = (props: any) => {
 
-  console.log(props)
-  
+
   return (
     <>
+      {/* TOP DOWN TO AND INCLUDING PRICE */}
       <div className="upper-section">
         <div className="top-row">
           <div className="new-with-tag">
             {props.item.is_new_with_tag ? <p>NEW WITH TAG</p> : null}
-            {/* TODO: FIX THIS FUDGE */}
           </div>
           <div className="remove-button">
             <FontAwesomeIcon icon={faX}/>
@@ -25,7 +21,7 @@ const Item = (props: any) => {
           </div>
         </div>
         <div className="item-img">
-          <img src={props.item.image} alt="Item image"/>
+          <img src={props.item.image} alt="Product image"/>
         </div>
         <div className="designer">
           <h4>{props.item.designer}</h4>
@@ -40,6 +36,8 @@ const Item = (props: any) => {
           <p>€ {props.item.price}</p>
         </div>
       </div>
+
+      {/* EST RETAIL DOWNWARDS */}
       <div className="lower-section">
         <div className="retail">
           <p>{props.item.retail ? `Est. Retail: €${props.item.retail}` : null }</p>

@@ -1,6 +1,5 @@
 import './App.css';
 import './components/styles/stylesheet.css';
-import React from 'react';
 import Topbar from './components/Topbar/Topbar'
 import Navbar from './components/Navbar/Navbar'
 import Offers from './components/Offers/Offers';
