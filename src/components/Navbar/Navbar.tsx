@@ -2,7 +2,6 @@ import '../styles/stylesheet.css';
 
 const Navbar = () => {
   
-  // TODO: REMOVE AND REPLACE WITH TOPBAR BURGER < 830PX VIEWPORT
 
   return (
     <div className="nav-bar">
