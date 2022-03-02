@@ -8,13 +8,14 @@ The server setup instructions, which will provide the JSON data to the client, c
 ## Design
 1. An Express Server was built to serve the static JSON data for populating the wishlist.
 2. A React client was setup with `npx create react app`.
-3. Communication with the server used the fetch API contained in the **APIservice.js** file.
-4. All styling was contained in a single **stylesheet.css** file at *./components/styles*.
-5. The page was split in to a **header** (static at top of page) and **main** (scrollable) class.
-6. The **header** contained the **topbar** and **navbar** components while the **main** contained the **wishlist** product listing.
-7. The **wishlist** component is made up of a title and then and **items** component.
-8. Within the **items** component are individual **item** components for each product on the whishlist.
-
+3. Communication with the server uses the fetch API contained in the **APIservice.js** file.
+4. All styling is contained in a single **stylesheet.css** file at *./components/styles*, rather than as separate stylesheets for each component. This assists with consistency and DRY content, but if more components were added that modularising the stylesheets may be better.
+5. In terms of structure, the page is split in to **header** (static at top of page) and **main** (scrollable) classes.
+6. The **header** contains the **topbar** and **navbar** components while the **main** sections contains the **wishlist** product listing.
+7. The grey **offers** component bar is free-floating between the two.
+8. The **wishlist** component is made up of a title and then and **items** component.
+9. Within the **items** component are individual **item** components for each product on the wishlist.
+10. Media queries are minimal and primarily limited to the navbar vanishing and being replaced by a burger-menu with a reduction in the Lampoo logo, when the window is reduced below 830px in width. I added some dummy icons to the topbar for this case.
 
 ---
 ## Installation and execution
@@ -29,24 +30,23 @@ The server setup instructions, which will provide the JSON data to the client, c
 
 ---
 ## Outstanding Items
-1. *Underlines of the navbar* items on the Lampoo site are animated, with a slide in from the left. 
+1. *Underlines of the navbar* items on the Lampoo site are animated, with a slide in from the left. I haven't successfully implemented this transition and would probably convert existing underlines from being *text-decoration* to *box-border*.
 2. The grey *OFFERS banner* below the navbar has not been implemented with the sluggish-bounce scroll away effect which exists on the Lampoo site.
 3. I used free FontAweseome icons for the *"X" remove item* buttons. Unfortunately these are darker than the ones found on the Lampoo site.
-4. When *resizing the width of the page*, the Lampoo site reduces the vertical dimensions of each product.
+4. When *resizing the width of the page* down, the Lampoo site maximises then reduces the dimensions of each product image and progressively limits the visible columns from 5 to 4 then 2 maximum. My attempts at this were failing so I haven't implemented the same.
 
 ---
 ## TODO
-1. Select Size dropdown menu.
-2. Convert all TS "any's" to proper format
-3. Refactor all CSS; alphabeticise, rename, etc.
-4. Reduce DB.JSON to its official size.
-5. Remove console.logs.
-5. ~~Move fetch logic in to own component.~~
-6. Replace navbar with burger and reduce logo to 50% on resize.
-7. Check accessibility throughout?
-8. Make OFFERS "bounce".
-9. NAVBAR underline animations.
-10. ~~Create git.repo.~~
-11. ~~Create README.MD for both.~~
-12. Create test suite.
-13. Deployment instructions for BE + FE.
+0. Select Size dropdown menu.
+0. Make Size dropdown overlay.
+
+1. Scale card sizes as screen size increases.
+- 5-4-2 cols
+- max height of image
+
+2. Make OFFERS "bounce".
+3. NAVBAR underline animations.
+
+4. Create test suite.
+5. Deployment instructions for BE + FE.
+
