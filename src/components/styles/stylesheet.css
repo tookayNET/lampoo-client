@@ -201,7 +201,6 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: center; */
   justify-content: flex-start;
   position: relative;
   top: 3rem;
@@ -505,14 +504,15 @@ html {
 .size-row .col1 {
   color: #666666;
   font-family: 'Contax Sans', 'Helvetica', arial; 
+  font-weight: 300;
   padding-left: 1rem;
   white-space: nowrap;
-  width: 5rem;
+  width: 6rem;
 }
 
 .size-row .col2 {
   color: black;
-  font-family: 'Contax Sans', 'Helvetica', arial; 
+  font-weight: 300;
   /* overflow: hidden; */
   padding-left: 1rem;
   text-overflow: ellipsis;
@@ -522,6 +522,7 @@ html {
 
 .size-row .col3 {
   color: var(--red);
+  font-weight: 300;
   overflow: hidden;
   padding-left: 1rem;
   padding-right: 1rem;

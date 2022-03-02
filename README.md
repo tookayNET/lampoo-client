@@ -37,12 +37,14 @@ The server setup instructions, which will provide the JSON data to the client, c
 
 ---
 ## TODO
-0. Select Size dropdown menu.
-0. Make Size dropdown overlay.
+0. Add size selector actions
+1. Remove all console.logs
+2. Tidy stylesheet
+3. Remove redundant css
+4. Refactor size dropdown in to CSS grid
+5. Return JSON file to original format
 
-1. Scale card sizes as screen size increases.
-- 5-4-2 cols
-- max height of image
+1. Scale card width as screen width changes by scaling image.
 
 2. Make OFFERS "bounce".
 3. NAVBAR underline animations.
