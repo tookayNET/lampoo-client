@@ -44,7 +44,7 @@ The server setup instructions, which will provide the JSON data to the client, c
 4. Fix yellow SELECT SIZE highlight to use "active" or de-activate when clicking away.
 
 5. Make OFFERS lazy-transition off screen.
-6. NAVBAR underline animations - sweep in a couple from REM from the left.
+6. NAVBAR underline animations - sweep in a couple of REM from the left.
 7. Refactor size dropdown menu in to CSS grid.
 
 8. Create test suite.
