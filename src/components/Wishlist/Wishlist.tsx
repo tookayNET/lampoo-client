@@ -18,6 +18,7 @@ const Wishlist = () => {
 
   return (
     <>
+      
       <div className="wishlist">
         <h3>Wishlist</h3>
       </div>
@@ -29,6 +30,7 @@ const Wishlist = () => {
           </div>
         ))}
       </div>
+
     </>
   )
 }

@@ -1,4 +1,3 @@
-import './App.css';
 import './components/styles/stylesheet.css';
 import Topbar from './components/Topbar/Topbar'
 import Navbar from './components/Navbar/Navbar'

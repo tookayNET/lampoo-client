@@ -37,18 +37,17 @@ The server setup instructions, which will provide the JSON data to the client, c
 
 ---
 ## TODO
-0. Add size selector actions
-1. Remove all console.logs
-2. Tidy stylesheet
-3. Remove redundant css
-4. Refactor size dropdown in to CSS grid
-5. Return JSON file to original format
+0. Return JSON file to original format
 
 1. Scale card width as screen width changes by scaling image.
+2. Close menu when clicking away.
+3. Add tick and highlight to selected size.
+4. Change size-button HOVER to ACTIVE.
 
-2. Make OFFERS "bounce".
-3. NAVBAR underline animations.
+5. Refactor size dropdown in to CSS grid
+6. Make OFFERS "bounce".
+7. NAVBAR underline animations.
 
-4. Create test suite.
-5. Deployment instructions for BE + FE.
+8. Create test suite.
+9. Deployment instructions for BE + FE.
 

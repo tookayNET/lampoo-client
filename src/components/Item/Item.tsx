@@ -5,10 +5,10 @@ import { faX } from '@fortawesome/free-solid-svg-icons';
 import SizeDropdown from './SizeDropdown/SizeDropdown';
 import { JSONdataType } from '../../interfaces';
 
-// TODO: CORRECT TYPESCRIPE TYPE FROM ANY
 const Item = ({ item }:any)  => {
 
-  const [size, setSize] = useState<string|boolean>(false);
+  const [sizeSet, setSizeSet] = useState(false);
+  const [cartActive, setCartActive] = useState<boolean>(false);
 
   return (
     <>
@@ -48,12 +48,18 @@ const Item = ({ item }:any)  => {
 
         {/* DROPDOWN MENU FOR SIZES IF MULTIPLE EXIST */}
         {item.sizes ?
-          <SizeDropdown sizes={item.sizes} cost={item.price} size={size} setSize={setSize} />
+          <SizeDropdown
+            sizes={item.sizes}
+            cost={item.price}
+            sizeSet={sizeSet}
+            setSizeSet={setSizeSet}
+            setCartActive={setCartActive}
+            item={item}
+          />
           : null
         }
-        
         {/* ADD TO CART GREYED AND INACTIVE IF ONE OF MULTIPLE SIZES IS NOT ALREADY SELECTED */}
-        <div className={`add-to-cart ${item.sizes ? "inactive" : "active"}`}>
+        <div className={`add-to-cart ${item.sizes && !sizeSet ? "inactive" : "active"}`}>
           <p>ADD TO CART</p>
           <span className="tooltiptext">Add to Cart</span>
         </div>
