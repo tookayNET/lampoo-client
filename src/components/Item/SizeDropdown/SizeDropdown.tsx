@@ -1,5 +1,5 @@
 import '../../styles/stylesheet.css';
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,7 +7,7 @@ const SizeDropdown = ({ sizes, cost, setSizeSet, size, item }: any) => {
 
   const [toggled, setToggled] = useState(true);
   const [chosenSize, setChosenSize] = useState<string>("");
-  const [chosenId, setChosenId] = useState<number>(0);
+  // const [chosenId, setChosenId] = useState<number>(0);
   
   const onClick = (e:any) => {
     // console.log(e)

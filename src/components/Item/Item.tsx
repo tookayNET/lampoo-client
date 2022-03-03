@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import SizeDropdown from './SizeDropdown/SizeDropdown';
-import { JSONdataType } from '../../interfaces';
+// import { JSONdataType } from '../../interfaces';
 
 const Item = ({ item }:any)  => {
 
