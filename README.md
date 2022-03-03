@@ -38,14 +38,14 @@ The server setup instructions, which will provide the JSON data to the client, c
 
 ---
 ## TODO
-1. Scale card width as screen width changes by scaling image.
-2. Add tick and highlight to selected size in SELECT SIZE menu.
+1. Scale card width as screen width changes by scaling product images up/down to max/min.
+2. Add tick-and-highlight to currently selected size in SELECT SIZE menu.
 3. Close SELECT SIZE menu when clicking away.
 4. Fix yellow SELECT SIZE highlight to use "active" or de-activate when clicking away.
 
-5. Make OFFERS lazy transition of screen.
-6. NAVBAR underline animations.
-7. Refactor size dropdown in to CSS grid.
+5. Make OFFERS lazy-transition off screen.
+6. NAVBAR underline animations - sweep in a couple from REM from the left.
+7. Refactor size dropdown menu in to CSS grid.
 
 8. Create test suite.
 9. Deployment instructions for BE + FE.
