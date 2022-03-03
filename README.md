@@ -25,7 +25,7 @@ The server setup instructions, which will provide the JSON data to the client, c
 4. Run **`git clone https://github.com/tookayNET/lampoo-client.git`** to clone the client repo in to a **./lampoo-client** sub-directory.
 5. Switch in to this newly created client directory (eg. **`cd lampoo-client`**).
 6. Run **`npm install`** to install all the required server dependencies.
-7. In the **APIservice.js** file, in line 1 edit the **const BASE_URL = "http://localhost:3123";** line if necessary so that the port number reflects the port used by your server (if you have changed it in the *./server/.env* file)
+7. In the **APIservice.js** file, in line 1 edit the **const BASE_URL = "http://localhost:3123";** line if necessary so that the port number reflects the port used by your server (if you have changed it in the *./lampoo-server/.env* file)
 8. To launch the client, execute **`npm start`** from the ./lampoo-client directory.
 
 ---
