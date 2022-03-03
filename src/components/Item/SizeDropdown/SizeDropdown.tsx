@@ -19,67 +19,21 @@ const SizeDropdown = ({ sizes, cost, setSizeSet, size, item }: any) => {
     setSizeSet(true);
     setChosenSize(e.target.parentElement.childNodes[0].innerText); 
   }
-  
 
   return (
     <>
-      
-      <div className="size-button-wrapper">
+      <div className={toggled ? `size-button-wrapper` : `size-button-wrapper size-button-wrapper-shine`}>
         <div className="size-button" onClick={onClick}>
-          
-          {/* {toggled ?
-            <div className="size-button-contents minimised">
-              
-              <div className="size-selector">
-                <div className="size-selector-title">
-                  {chosenSize==="" ? <span>SELECT SIZE</span> : <span>{chosenSize}</span>}
-                </div>
-                <div className="size-selector-dd">
-                  <FontAwesomeIcon icon={faAngleDown} />
-                </div>
-              </div>
-
-            </div>
-            :
-            <div className="size-button-contents shadow">
-              
-              <div className="size-selector">
-
+          <div className={toggled ? `size-button-contents minimised` : `size-button-contents shadow`}>
+            <div className="size-selector">
               <div className="size-selector-title">
                   {chosenSize==="" ? <span>SELECT SIZE</span> : <span>{chosenSize}</span>}
-                </div>
-                <div className="size-selector-dd">
-                  <FontAwesomeIcon icon={faAngleUp} />
-                </div>
-
               </div>
-
-              {sizes.map((item: any, i: number) => (
-                <div className="size-row" key={item.id} onClick={sizeSelected}>
-                  <span className="col1">{item.name}</span>
-                  <span className="col2">€ {cost}</span>
-                  <span className="col3">{item.qty} Left!</span>
-                </div>
-              ))}  
-
+              <div className="size-selector-dd">
+                { toggled ? <FontAwesomeIcon icon={faAngleDown} /> : <FontAwesomeIcon icon={faAngleUp} />}
+              </div>
             </div>
-          } */}
-
-
-
-            <div className={toggled ? `size-button-contents minimised` : `size-button-contents shadow`}>
-              
-              <div className="size-selector">
-
-              <div className="size-selector-title">
-                  {chosenSize==="" ? <span>SELECT SIZE</span> : <span>{chosenSize}</span>}
-                </div>
-                <div className="size-selector-dd">
-                  { toggled ? <FontAwesomeIcon icon={faAngleDown} /> : <FontAwesomeIcon icon={faAngleUp} />}
-                </div>
-
-              </div>
-              
+            
               {!toggled && sizes.map((item: any, i: number) => (
                 <div className="size-row" key={item.id} onClick={sizeSelected}>
                   <span className="col1">{item.name}</span>
@@ -88,13 +42,9 @@ const SizeDropdown = ({ sizes, cost, setSizeSet, size, item }: any) => {
                 </div>
               ))}  
 
-            </div>
-          
-
-
+          </div>
         </div>
       </div>
-
     </>
   )
 }

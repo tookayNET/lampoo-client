@@ -34,19 +34,18 @@ The server setup instructions, which will provide the JSON data to the client, c
 2. The grey *OFFERS banner* below the navbar has not been implemented with the sluggish-bounce scroll away effect which exists on the Lampoo site.
 3. I used free FontAweseome icons for the *"X" remove item* buttons. Unfortunately these are darker than the ones found on the Lampoo site.
 4. When *resizing the width of the page* down, the Lampoo site maximises then reduces the dimensions of each product image and progressively limits the visible columns from 5 to 4 then 2 maximum. My attempts at this were failing so I haven't implemented the same.
+5. Recording the selected size with a tick and highlight is not implemented.
 
 ---
 ## TODO
-0. Return JSON file to original format
-
 1. Scale card width as screen width changes by scaling image.
-2. Close menu when clicking away.
-3. Add tick and highlight to selected size.
-4. Change size-button HOVER to ACTIVE.
+2. Add tick and highlight to selected size in SELECT SIZE menu.
+3. Close SELECT SIZE menu when clicking away.
+4. Fix yellow SELECT SIZE highlight to use "active" or de-activate when clicking away.
 
-5. Refactor size dropdown in to CSS grid
-6. Make OFFERS "bounce".
-7. NAVBAR underline animations.
+5. Make OFFERS lazy transition of screen.
+6. NAVBAR underline animations.
+7. Refactor size dropdown in to CSS grid.
 
 8. Create test suite.
 9. Deployment instructions for BE + FE.

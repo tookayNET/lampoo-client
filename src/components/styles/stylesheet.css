@@ -326,6 +326,7 @@ html {
 .size-button-wrapper {
   border: none;
   border-width: 1px;
+  cursor: pointer;
   display: flex;
   font-size: 11px;
   font-weight: 600;
@@ -340,10 +341,14 @@ html {
   z-index: 10;
 }
 
-/* TODO: CHANGE TO ACTIVE */
-.size-button-wrapper:hover {
+/* .size-button-wrapper:active {
   box-shadow: 0 0 3px 1px var(--gold);
   cursor: pointer;
+  transition: 0.3s;
+} */
+
+.size-button-wrapper-shine {
+  box-shadow: 0 0 3px 1px var(--gold);
   transition: 0.3s;
 }
 
@@ -353,6 +358,7 @@ html {
   background-color: white;
   border: solid;
   border-width: 1px;
+  cursor: pointer;
   display: flex;
   font-size: 11px;
   font-weight: 600;
