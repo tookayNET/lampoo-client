@@ -9,9 +9,9 @@ The server setup instructions, which will provide the JSON data to the client, c
 1. An Express Server was built to serve the static JSON data for populating the wishlist.
 2. A React client was setup with `npx create react app`.
 3. Communication with the server uses the fetch API contained in the **APIservice.js** file.
-4. All styling is contained in a single **stylesheet.css** file at *./components/styles*, rather than as separate stylesheets for each component. This assists with consistency and DRY content, but if more components were added that modularising the stylesheets may be better.
+4. All styling is contained in a single **stylesheet.css** file at *./components/styles*, rather than as separate stylesheets for each component. This assists with consistency and DRY content, but if more components were added then modularising the stylesheets may be better.
 5. In terms of structure, the page is split in to **header** (static at top of page) and **main** (scrollable) classes.
-6. The **header** contains the **topbar** and **navbar** components while the **main** sections contains the **wishlist** product listing.
+6. The **header** contains the **topbar** and **navbar** components while the **main** section contains the **wishlist** product listing.
 7. The grey **offers** component bar is free-floating between the two.
 8. The **wishlist** component is made up of a title and then and **items** component.
 9. Within the **items** component are individual **item** components for each product on the wishlist.
